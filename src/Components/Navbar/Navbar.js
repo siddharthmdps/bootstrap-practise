@@ -13,7 +13,7 @@ const navbar = props =>{
 return(
     <React.Fragment>
         <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="#home" className={classes.Logo}><Image src={Logos} roundedCircle className={classes.Image}/></Navbar.Brand>
+            <Navbar.Brand href="#home" className={classes.Logo}><Image src="assets/images/logo.jpg" roundedCircle className={classes.Image}/></Navbar.Brand>
             <Nav className="mr-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
