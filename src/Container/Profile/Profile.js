@@ -22,11 +22,12 @@ class Profile extends Component {
                     Click me!
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="1">
-                    <Card.Body>Hello! I'm another body</Card.Body>
+                    <Card.Body>
+                    <iframe style={{width: '100%', height: '100vh'}} src="https://docs.google.com/document/d/e/2PACX-1vTqVSlMkDmBxnOs8qR2p1JLPDJUvS7IWlXkMFo7niI0tYVkkin5iDb41C08_c0CPXvm1Dqe4X9Lk680/pub?embedded=true"></iframe>
+                    </Card.Body>
                     </Accordion.Collapse>
                 </Card>
                 </Accordion>
-            
             </Container>
         );
     }

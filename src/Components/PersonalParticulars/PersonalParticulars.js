@@ -34,16 +34,23 @@ const personalParticulars = props => {
                 <Form.Control type='text' placeholder="Oliver" />
                 </Col>
             </Form.Group>
-            <Form.Group as={Row} controlId="MiddleName">
+
+            <Form.Group as={Row} controlId="Email">
             <Form.Label column sm="2">
                 E Mail
                 </Form.Label>
-                <Col sm="10">
+                <Col sm="5">
                 <Form.Control type='text' placeholder="someone@email.com" />
                 </Col>
             </Form.Group>
-            <Form.Group as={Row} controlId="LastName">
-                
+
+            <Form.Group as={Row} controlId="Phone">
+            <Form.Label column sm="2">
+                Phone
+                </Form.Label>
+                <Col sm="5">
+                <Form.Control type='text' placeholder="+65 1234 1234" />
+                </Col>
             </Form.Group>
         </Form>
         </React.Fragment>
