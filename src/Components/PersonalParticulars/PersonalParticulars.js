@@ -1,57 +1,81 @@
 import React from 'react';
 import {Form, Row, Col, Container} from 'react-bootstrap';
 
-
-            // <FormField placeholder='Neil Armstrong' attribute='Name' />
-            // <FormField placeholder='somebody@mailProvider.com' attribute='E-mail' />
-            // <FormField placeholder='+65 1234 1234' attribute='Phone No.' />
-            // <FormField placeholder='Singapore' attribute='Country of Residence' />
-            // <FormField placeholder='115A Commonwealth Drive #02-14, 149596, Singapore' attribute='Address' />
-            // <FormField placeholder='Singapore' attribute='City' />
-            // <FormField placeholder='149596' attribute='Postal Code' />
-
 const personalParticulars = props => {
     return(
         <React.Fragment>
         <Form>
-            <Form.Group as={Row} controlId="FirstName">
-                <Form.Label column sm="2">
-                First Name
-                </Form.Label>
-                <Col sm="2">
-                <Form.Control type='text' placeholder="Joshua" />
-                </Col>
-                <Form.Label column sm="2">
-                Middle Name
-                </Form.Label>
-                <Col sm="2">
-                <Form.Control type='text' placeholder="Chee Yan Cheng" />
-                </Col>
-                <Form.Label column sm="2">
-                Last Name
-                </Form.Label>
-                <Col sm="2">
-                <Form.Control type='text' placeholder="Oliver" />
-                </Col>
-            </Form.Group>
+            <Form.Row>
+                <Form.Group as={Col} sm='4' controlId="firstName">
+                    <Form.Label>First Name</Form.Label>
+                        <Form.Control type='text' placeholder="Joshua" />
+                </Form.Group>
+
+                <Form.Group as={Col}  sm='4' controlId="middleName">
+                    <Form.Label>Middle Name</Form.Label>
+                        <Form.Control type='text' placeholder="Chee Yan Cheng" />
+                </Form.Group>
+
+                <Form.Group as={Col}  sm='4' controlId="lastName">
+                    <Form.Label>Last Name</Form.Label>
+                    <Form.Control type='text' placeholder="Oliver" />
+                </Form.Group>
+            </Form.Row>
 
             <Form.Group as={Row} controlId="Email">
-            <Form.Label column sm="2">
-                E Mail
-                </Form.Label>
-                <Col sm="5">
-                <Form.Control type='text' placeholder="someone@email.com" />
-                </Col>
+                <Form.Label column sm="2">E Mail</Form.Label>
+                <Col sm="10"><Form.Control type='text' placeholder="someone@email.com" /></Col>
             </Form.Group>
 
             <Form.Group as={Row} controlId="Phone">
             <Form.Label column sm="2">
                 Phone
                 </Form.Label>
-                <Col sm="5">
+                <Col sm="10">
                 <Form.Control type='text' placeholder="+65 1234 1234" />
                 </Col>
-            </Form.Group>
+            </Form.Group> 
+
+            <Form.Group as={Row} controlId="address">
+            <Form.Label column sm="2">
+                Current Address
+                </Form.Label>
+                <Col sm="10">
+                <Form.Control type='text' placeholder="115A Commonwealth Drive #02-14, 149596, Singapore' attribute='Address" />
+                </Col>
+            </Form.Group>          
+
+            <Form.Group as={Row} controlId="City">
+            <Form.Label column sm="2">
+                City
+                </Form.Label>
+                <Col sm="4">
+                <Form.Control type='text' placeholder="Singapore" />
+                </Col>
+                <Form.Label column sm="2">
+                Country
+                </Form.Label>
+                <Col sm="4">
+                <Form.Control type='text' placeholder="Singapore" />
+                </Col>
+            </Form.Group>   
+            
+            <Form.Group as={Row} controlId="postalCode">
+            <Form.Label column sm="2">
+                Postal Code
+                </Form.Label>
+                <Col sm="10">
+                <Form.Control type='text' placeholder="123456" />
+                </Col>
+            </Form.Group>   
+            <Form.Group as={Row} controlId="nationality">
+            <Form.Label column sm="2">
+                Nationality
+                </Form.Label>
+                <Col sm="10">
+                <Form.Control type='text' placeholder="Singaporean" />
+                </Col>
+            </Form.Group>      
         </Form>
         </React.Fragment>
     );
