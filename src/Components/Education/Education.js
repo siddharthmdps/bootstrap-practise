@@ -1,8 +1,8 @@
 import React from 'react';
 import {Form, Row, Col, Container} from 'react-bootstrap';
 
-const personalParticulars = props => {
-    
+const education = props => {
+
     return(
         <React.Fragment>
         <Form>
@@ -53,4 +53,4 @@ const personalParticulars = props => {
     );
 }
 
-export default personalParticulars;
+export default education;
