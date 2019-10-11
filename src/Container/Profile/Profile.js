@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import classes from './Profile.module.css';
+import ProfileImage from '../../Components/ProfileImage/ProfileImage';
 import PersonalParticulars from '../../Components/PersonalParticulars/PersonalParticulars';
 import Education from '../../Components/Education/Education';
 import WorkExperience from '../../Components/WorkExperience/WorkExperience';
@@ -17,9 +18,8 @@ class Profile extends Component {
             <Container>
                 <br />
                 <Row>
-                <Col sm="4" style={{backgroundColor:'grey', textAlign: 'center'}}>
-                    
-                    <Image src = "assets/images/CompanyLogo.png" />
+                <Col sm="4">
+                    <ProfileImage />
                 </Col>
                 <Col sm="8">
                 <Accordion defaultActiveKey="0">
