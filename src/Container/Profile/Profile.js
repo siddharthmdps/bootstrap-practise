@@ -15,13 +15,13 @@ import {Accordion, Card, Button, Container, Col, Row, Image} from 'react-bootstr
 class Profile extends Component {
     render(){
         return(
-            <Container>
+            <Container fluid>
                 <br />
                 <Row>
-                <Col sm="4">
+                <Col md={{offset: 1, span:1}}>
                     <ProfileImage />
                 </Col>
-                <Col sm="8">
+                <Col md={{offset: 1, span:9}} >
                 <Accordion defaultActiveKey="0">
                 <Card>
                     <Accordion.Toggle as={Card.Header} eventKey="0">

@@ -41,7 +41,7 @@ const personalParticulars = props => {
                 Current Address
                 </Form.Label>
                 <Col sm="10">
-                <Form.Control type='text' placeholder="115A Commonwealth Drive #02-14, 149596, Singapore' attribute='Address" />
+                <Form.Control type='text' placeholder="115A Commonwealth Drive #02-14, 149596, Singapore" />
                 </Col>
             </Form.Group>          
 

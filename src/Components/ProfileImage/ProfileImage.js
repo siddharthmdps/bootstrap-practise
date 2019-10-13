@@ -6,10 +6,11 @@ const profileImage = props => {
     
     return(
         <React.Fragment>
-            <Container>
+            <Container className={classes.ProfileImage}>
                 <Row>
-                    <Image src = "assets/images/CompanyLogo.png" />
+                    <Image src = "assets/images/logo.jpg" className={classes.Image}/>
                 </Row>
+                <br />
                 <Row>
                     <Button type = "">Upload</Button>
                 </Row>
